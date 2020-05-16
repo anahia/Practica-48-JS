@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<!--esta es mi practica 48-->
+
+<head>
+    <title>Practica 48</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+        var vecta = [];
+        var f;
+        var vaur;
+        do {
+            vaur = prompt('Ingresar un valor (Nota: ingresar 0 para finalizar el progrma):', '');
+            vaur = parseInt(vaur);
+            if (vaur < 100) {
+                vecta.unshift(vaur);
+            } else {
+                vecta.push(vaur);
+            }
+        } while (vaur != 0);
+        vecta.shift();
+        for (f = 0; f < vecta.length; f++) {
+            document.write(vecta[f]);
+            document.write('<br>');
+        }
+    </script>
+
+</body>
+
+</html>
